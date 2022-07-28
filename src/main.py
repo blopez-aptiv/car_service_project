@@ -1,3 +1,5 @@
+# Main program
+# Object oriented programing
 from carro import Carro
 
 if __name__ == '__main__':
