@@ -1,3 +1,4 @@
+# Connection to a database
 import pymysql
 import os
 
