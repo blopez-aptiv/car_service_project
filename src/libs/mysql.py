@@ -1,6 +1,8 @@
 # Connection to a database
 import pymysql
 import os
+import sys
+print(sys.exec_prefix)
 
 class MySQL:
     def __init__(self) -> None:

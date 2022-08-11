@@ -14,7 +14,7 @@
     
     "env": {    
     "MYSQL_USERNAME": "root", // The host that RabbitMQ is hosted on    
-    "MYSQL_PASSWORD": "dataApp_ctq2022", // The port on the host that RabbitMQ is bound to    
+    "MYSQL_PASSWORD": "password", // The port on the host that RabbitMQ is bound to    
     "MYSQL_DB": "servicio_carro", // The username for logging into RabbitMQ    
     "MYSQL_HOST": "localhost"  
     }    
