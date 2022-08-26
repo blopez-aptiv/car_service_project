@@ -1,3 +1,4 @@
+from sqlite3 import Cursor
 import pymysql
 import os
 import sys
@@ -66,3 +67,5 @@ class MySQL:
         except pymysql.ProgrammingError as e:
             print(f"error al ejecutar la consulta {e}")
             sys.exit()
+            
+    

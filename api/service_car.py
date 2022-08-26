@@ -109,3 +109,13 @@ class crea_cita(Resource):
         mysql.crear_cita(id_cliente, id_sucursal, fecha, id_vehiculo, id_estado_servicio, tipo_servicio_id)
         
         return  "creacion exitosa de cita"
+    
+    
+@namespace.route('/obtener_cita')
+class obtener_cita(Resource):
+    @namespace.response(code=200, description='Registro exitoso')
+    @namespace.response(code=400, description='Peticion invalida')
+    @namespace.response(code=500, description='Error interno en el servidor')
+    def get(self):
+        citas = mysql.consultar_cita()    
+        return citas

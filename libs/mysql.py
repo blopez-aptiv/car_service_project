@@ -118,3 +118,18 @@ class MySQL:
         except pymysql.ProgrammingError as e:
             print(f"error al ejecutar la consulta {e}")
             sys.exit()
+            
+    def consultar_cita(self):
+        citas = []
+        try:
+            with self.mysql_connection.cursor() as cursor:
+                query = "SELECT id_cita, id_servicio, id_cliente, id_sucursal FROM cita;"
+                cursor.execute(query)
+                
+                for row in cursor.fetchall():
+                    citas.append(row)
+                    
+            return citas
+        except pymysql.ProgrammingError as e:
+            print(f"Error al ejecutar la consola {e}")
+            sys.exit()            
