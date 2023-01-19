@@ -7,6 +7,7 @@ api.init_app(app)
 
 if __name__ == '__main__':
     app.run(debug=True)
+    #Cristian was here
     # mysql = MySQL()
     # print('conexion exitosa')
     
