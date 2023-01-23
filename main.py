@@ -7,6 +7,7 @@ api.init_app(app)
 
 if __name__ == '__main__':
     app.run(debug=True)
+    #Code version Juanma
     #Cristian was here
     #Cristian was here again
     #Cristian was here again again
